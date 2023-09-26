@@ -1,0 +1,147 @@
+DEBUG:botocore.hooks:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+DEBUG:botocore.hooks:Changing event name from before-call.apigateway to before-call.api-gateway
+DEBUG:botocore.hooks:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+DEBUG:botocore.hooks:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+DEBUG:botocore.hooks:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+DEBUG:botocore.utils:IMDS ENDPOINT: http://169.254.169.254/
+DEBUG:botocore.credentials:Looking for credentials via: env
+DEBUG:botocore.credentials:Looking for credentials via: assume-role
+DEBUG:botocore.credentials:Looking for credentials via: assume-role-with-web-identity
+DEBUG:botocore.credentials:Looking for credentials via: sso
+DEBUG:botocore.credentials:Looking for credentials via: shared-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: custom-process
+DEBUG:botocore.credentials:Looking for credentials via: config-file
+DEBUG:botocore.credentials:Looking for credentials via: ec2-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: boto-config
+DEBUG:botocore.credentials:Looking for credentials via: container-role
+DEBUG:botocore.credentials:Looking for credentials via: iam-role
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 169.254.169.254:80
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "PUT /latest/api/token HTTP/1.1" 200 56
+DEBUG:urllib3.connectionpool:Resetting dropped connection: 169.254.169.254
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "GET /latest/meta-data/iam/security-credentials/ HTTP/1.1" 404 337
+DEBUG:botocore.utils:Metadata service returned non-200 response with status code of 404 for url: http://169.254.169.254/latest/meta-data/iam/security-credentials/, content body: b'<?xml version="1.0" encoding="iso-8859-1"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n\t"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n'
+DEBUG:botocore.utils:Max number of attempts exceeded (1) when attempting to retrieve data from metadata service.
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/endpoints.json
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/sdk-default-configuration.json
+DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f0225d4a290>
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/service-2.json
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/endpoint-rule-set-1.json.gz
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/partitions.json
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f0225c9c040>
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f0225c413f0>
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f0225c93d90>
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: environment_service
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: environment_global
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: config_service
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: config_global
+DEBUG:botocore.configprovider:No configured endpoint found.
+DEBUG:botocore.endpoint:Setting s3 timeout as (60, 60)
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/_retry.json
+DEBUG:botocore.client:Registering retry handlers for service: s3
+DEBUG:botocore.utils:Registering S3 region redirector handler
+DEBUG:botocore.credentials:Looking for credentials via: env
+DEBUG:botocore.credentials:Looking for credentials via: assume-role
+DEBUG:botocore.credentials:Looking for credentials via: assume-role-with-web-identity
+DEBUG:botocore.credentials:Looking for credentials via: sso
+DEBUG:botocore.credentials:Looking for credentials via: shared-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: custom-process
+DEBUG:botocore.credentials:Looking for credentials via: config-file
+DEBUG:botocore.credentials:Looking for credentials via: ec2-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: boto-config
+DEBUG:botocore.credentials:Looking for credentials via: container-role
+DEBUG:botocore.credentials:Looking for credentials via: iam-role
+DEBUG:urllib3.connectionpool:Resetting dropped connection: 169.254.169.254
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "PUT /latest/api/token HTTP/1.1" 200 56
+DEBUG:urllib3.connectionpool:Resetting dropped connection: 169.254.169.254
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "GET /latest/meta-data/iam/security-credentials/ HTTP/1.1" 404 337
+DEBUG:botocore.utils:Metadata service returned non-200 response with status code of 404 for url: http://169.254.169.254/latest/meta-data/iam/security-credentials/, content body: b'<?xml version="1.0" encoding="iso-8859-1"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n\t"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n'
+DEBUG:botocore.utils:Max number of attempts exceeded (1) when attempting to retrieve data from metadata service.
+DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f0225d4a290>
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/sagemaker-runtime/2017-05-13/service-2.json
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/sagemaker-runtime/2017-05-13/endpoint-rule-set-1.json.gz
+DEBUG:botocore.hooks:Event creating-client-class.sagemaker-runtime: calling handler <function add_generate_presigned_url at 0x7f0225c93d90>
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: environment_service
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: environment_global
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: config_service
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: config_global
+DEBUG:botocore.configprovider:No configured endpoint found.
+DEBUG:botocore.hooks:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+DEBUG:botocore.hooks:Changing event name from before-call.apigateway to before-call.api-gateway
+DEBUG:botocore.hooks:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+DEBUG:botocore.hooks:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+DEBUG:botocore.hooks:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+DEBUG:botocore.utils:IMDS ENDPOINT: http://169.254.169.254/
+DEBUG:botocore.credentials:Looking for credentials via: env
+DEBUG:botocore.credentials:Looking for credentials via: assume-role
+DEBUG:botocore.credentials:Looking for credentials via: assume-role-with-web-identity
+DEBUG:botocore.credentials:Looking for credentials via: sso
+DEBUG:botocore.credentials:Looking for credentials via: shared-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: custom-process
+DEBUG:botocore.credentials:Looking for credentials via: config-file
+DEBUG:botocore.credentials:Looking for credentials via: ec2-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: boto-config
+DEBUG:botocore.credentials:Looking for credentials via: container-role
+DEBUG:botocore.credentials:Looking for credentials via: iam-role
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 169.254.169.254:80
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "PUT /latest/api/token HTTP/1.1" 200 56
+DEBUG:urllib3.connectionpool:Resetting dropped connection: 169.254.169.254
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "GET /latest/meta-data/iam/security-credentials/ HTTP/1.1" 404 337
+DEBUG:botocore.utils:Metadata service returned non-200 response with status code of 404 for url: http://169.254.169.254/latest/meta-data/iam/security-credentials/, content body: b'<?xml version="1.0" encoding="iso-8859-1"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n\t"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n'
+DEBUG:botocore.utils:Max number of attempts exceeded (1) when attempting to retrieve data from metadata service.
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/endpoints.json
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/sdk-default-configuration.json
+DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f5dd3ada290>
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/service-2.json
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/endpoint-rule-set-1.json.gz
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/partitions.json
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f5dd3a2c040>
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f5dd39d13f0>
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f5dd3a23d90>
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: environment_service
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: environment_global
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: config_service
+DEBUG:botocore.configprovider:Looking for endpoint for s3 via: config_global
+DEBUG:botocore.configprovider:No configured endpoint found.
+DEBUG:botocore.endpoint:Setting s3 timeout as (60, 60)
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/_retry.json
+DEBUG:botocore.client:Registering retry handlers for service: s3
+DEBUG:botocore.utils:Registering S3 region redirector handler
+DEBUG:botocore.credentials:Looking for credentials via: env
+DEBUG:botocore.credentials:Looking for credentials via: assume-role
+DEBUG:botocore.credentials:Looking for credentials via: assume-role-with-web-identity
+DEBUG:botocore.credentials:Looking for credentials via: sso
+DEBUG:botocore.credentials:Looking for credentials via: shared-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: custom-process
+DEBUG:botocore.credentials:Looking for credentials via: config-file
+DEBUG:botocore.credentials:Looking for credentials via: ec2-credentials-file
+DEBUG:botocore.credentials:Looking for credentials via: boto-config
+DEBUG:botocore.credentials:Looking for credentials via: container-role
+DEBUG:botocore.credentials:Looking for credentials via: iam-role
+DEBUG:urllib3.connectionpool:Resetting dropped connection: 169.254.169.254
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "PUT /latest/api/token HTTP/1.1" 200 56
+DEBUG:urllib3.connectionpool:Resetting dropped connection: 169.254.169.254
+DEBUG:urllib3.connectionpool:http://169.254.169.254:80 "GET /latest/meta-data/iam/security-credentials/ HTTP/1.1" 404 337
+DEBUG:botocore.utils:Metadata service returned non-200 response with status code of 404 for url: http://169.254.169.254/latest/meta-data/iam/security-credentials/, content body: b'<?xml version="1.0" encoding="iso-8859-1"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n\t"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n'
+DEBUG:botocore.utils:Max number of attempts exceeded (1) when attempting to retrieve data from metadata service.
+DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f5dd3ada290>
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/sagemaker-runtime/2017-05-13/service-2.json
+DEBUG:botocore.loaders:Loading JSON file: /home/ubuntu/Try-On-Anything/tryon-env/lib/python3.10/site-packages/botocore/data/sagemaker-runtime/2017-05-13/endpoint-rule-set-1.json.gz
+DEBUG:botocore.hooks:Event creating-client-class.sagemaker-runtime: calling handler <function add_generate_presigned_url at 0x7f5dd3a23d90>
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: environment_service
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: environment_global
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: config_service
+DEBUG:botocore.configprovider:Looking for endpoint for sagemaker-runtime via: config_global
+DEBUG:botocore.configprovider:No configured endpoint found.
+ERROR:root:Error processing request: You must specify a region.
