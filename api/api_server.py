@@ -27,34 +27,35 @@ async def process_request(user_token, garment_image, human_model):
     """
     try:
         # Initialize classes
-        image_handler = ImageHandler()
-        human_pre_processing = HumanPreProcessing()
-        garment_pre_processing = GarmentPreProcessing()
-        garment_warping = GarmentWarping()
-        try_on_module = TryOnModule()
-        post_processing = PostProcessing()
+        #image_handler = ImageHandler()
+        #human_pre_processing = HumanPreProcessing()
+        #garment_pre_processing = GarmentPreProcessing()
+        #garment_warping = GarmentWarping()
+        #try_on_module = TryOnModule()
+        #post_processing = PostProcessing()
 
         # Image Handling
-        processed_garment_image, processed_human_image = image_handler.handle_images(garment_image, human_model)
+        #processed_garment_image, processed_human_image = image_handler.handle_images(garment_image, human_model)
 
-        # Pre-Processing
-        human_data = human_pre_processing.process(processed_human_image)
-        garment_data = garment_pre_processing.process(processed_garment_image)
+        # Pre-Processing - parallel
+        #human_data = human_pre_processing.process(processed_human_image)
+        #garment_data = garment_pre_processing.process(processed_garment_image)
 
         # Garment Warping
-        warped_garment = garment_warping.warp_garment(human_data, garment_data)
+        #warped_garment = garment_warping.warp_garment(human_data, garment_data)
 
         # Try-On
-        final_coarse_image = try_on_module.perform_try_on(warped_garment, human_data, garment_data)
+        #final_coarse_image = try_on_module.perform_try_on(warped_garment, human_data, garment_data)
 
         # Post-Processing
-        final_image = post_processing.upscale_and_enhance(final_coarse_image)
-        final_image_with_watermark = post_processing.add_watermark(final_image, 'path/to/watermark.png')
+        #final_image = post_processing.upscale_and_enhance(final_coarse_image)
+        #final_image_with_watermark = post_processing.add_watermark(final_image, 'path/to/watermark.png')
 
         # Upload final image to S3 and get URI
-        final_image_uri = image_handler.upload_to_s3(final_image_with_watermark, user_token)
+        #final_image_uri = image_handler.upload_to_s3(final_image_with_watermark, user_token)
 
-        return {"final_image_uri": final_image_uri}
+        #return {"final_image_uri": final_image_uri}
+        return {"message": "This is a placeholder message since methods are not implemented yet."}
 
     except Exception as e:
         logger.log_error(f"Error processing request: {e}")  
@@ -81,5 +82,5 @@ async def try_on(
     """
     await validate_api_key(x_api_key)
     
-    # Your code to handle the API request goes here
+    # handle request
     return await process_request(user_token, garment_image, human_model)
